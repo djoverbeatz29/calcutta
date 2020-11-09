@@ -3,7 +3,7 @@ import React from 'react'
 class Golfer extends React.Component {
     constructor(props) {
         super(props)
-        this.state = this.props.playerk
+        this.state = this.props.player;
     }
     
     componentDidMount() {

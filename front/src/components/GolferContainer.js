@@ -11,24 +11,6 @@ class GolferContainer extends React.Component {
         }
     }
 
-    // componentDidMount() {
-    //     fetch('https://www.augusta.com/masters/players', {mode: 'no-cors'})
-    //     .then(r=>r.text())
-    //     .then(data=>{
-    //         const doc = (new DOMParser()).parseFromString(data, 'text/html')
-    //         for (const player of Array.from(doc.querySelectorAll("div[class='col-md-6']"))) {
-    //             const name = player.innerText
-    //             const link = player.querySelector('a').getAttribute('href').replace(/http/, 'https')
-    //             const info = {name, link}
-    //             this.setState(prevState => {
-    //                 return {
-    //                     players: [...prevState.players, info]
-    //                 }
-    //             })
-    //         }
-    //     })
-    // }
-
     componentDidMount() {
         fetch('http://localhost:3001/golfers')
         .then(r=>r.json())
